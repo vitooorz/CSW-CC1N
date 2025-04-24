@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Exercicio 1 */
+
+        .box{
+            outline: 30px solid blue;
+            border: 10px solid red;
+            padding: 20px;
+            margin: 50px;
+            background-color: aliceblue;
+            width: 300px;
+            height: 50px;
+        }
+
+        /* Exercicio 2 */
+
+        #titleid {
+            color: blue;
+            text-align: center;
+        }
+
+        .right {
+            color: green;
+            text-align: right;
+        }
+
+        .left {
+            color: green;
+            text-align: left;
+        }
+
+        .titleclass {
+            color: rgb(28, 90, 28);
+        }
+
+        /* Exercicio 3 */
+
+        .titlegreen {
+            color: green;
+        }
+
+        .divbox{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        .divbox:hover{
+            background-color: red;     
+        }
+
+
+
+        /* Exercicio 4 */
+
+        .element {
+            color: green;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a::after {
+            content: ' [Link]';
+            text-decoration: none;
+            color: gray;
+        }
+
+        a::before {
+            content: ' >>';
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1 class="box">Exemplo de Caixa</h1>   <!--Exercico 1-->
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h1 id="titleid">Seletor Personalizado ID</h1>   <!--Exercicio 2-->
+    <h2 class="right">Capitulo 1</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ratione est quidem expedita illum, corrupti consectetur cumque ullam libero! Accusantium quas repellendus iste a in aperiam voluptatum placeat recusandae fuga.</p>
+    <h2 class="left">Capitulo 2</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore ut quia sint, et veritatis quam, asperiores, obcaecati optio possimus doloribus temporibus consequuntur. Magnam fugiat modi ea enim, libero autem officia.</p>
+    <h1 class="titleclass">Seletor Personalizado CLASS</h1>
+    <h2 class="right">Capitulo 1</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae odio deserunt inventore dolorem error nemo, ipsa magnam eligendi eos, incidunt, molestias nesciunt amet. Soluta blanditiis tempora molestiae ipsum adipisci repellendus.</p>
+    <h2 class="left">Capitulo 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque harum quod sapiente sequi assumenda beatae incidunt mollitia, delectus, necessitatibus iure sed tempora similique qui unde in impedit dicta odit!</p>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h1 class="titlegreen">Exemplo de Houver</h1>   <!--Exercicio 3-->
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div class="divbox">
+        <p>Passe o mouse aqui</p>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h1 class="element">Exemplo de Pseudo Elemento</h1>  <!--Exercicio 4-->
+    <br>
+    <ul>
+        <li><a href="https://github.com/vitooorz/CSW-CC1N.git" target="_blank">Repositorio do GitHub</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://uvv.br/" target="_blank">Site da UVV</a></li>
+    </ul>
+</body>
+</html>
