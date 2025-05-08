@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula17</title>
+    <style>
+
+        main {
+            display: flex;
+            flex-direction: row;
+            align-content: space-between;
+            gap: 35px;
+        }
+
+        .dados {
+            display: flex;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            height: 400px;
+            width: 400px;
+
+        }
+
+        .login {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            height: 200px;
+            width: 400px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h2>Formulario</h2>
+    <main>
+    <div class="dados">
+        <h1 style="text-align: center;">Dados pessoais</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" size="30" maxlength="20" value="">
+            <label for="idade">Idade:</label>
+            <input type="text" name="idade" id="idade" size="30" maxlength="20" value="">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" size="30" maxlength="20" value="">
+            <label for="color">Escolha uma cor:</label>
+            <input type="color">
+            <label for="date">Data e hora</label>
+            <input type="date">
+        </form>
+    </div>
+    <div class="box-login">
+    <div class="login">
+        <h1 style="text-align: center;">Login</h1>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" size="40" maxlength="20" value="">
+        <label for="senha">Senha:</label>
+        <input type="password" name="nsenha" id="senha" size="40" maxlength="20" value="">
+    </div>
+
+
+    </div>
+</main>
+    
+</body>
+</html>
